@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducing gdocweb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    
+@font-face {   font-family: 'Roboto';   font-style: normal;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype'); } 
+.normal_text {
+font-family: Roboto;
+font-size: 11.0PT;
+color: #666666;
+margin-top: 10.0PT;
+line-height: 1.4;
+direction: ltr;
+}
+h1 {
+font-size: 20.0PT;
+color: #e01b84;
+margin-top: 20.0PT;
+line-height: 1.0;
+direction: ltr;
+}
+h2 {
+font-size: 16.0PT;
+color: #000000;
+margin-top: 16.0PT;
+line-height: 1.0;
+direction: ltr;
+}
+h3 {
+font-size: 12.0PT;
+color: #283592;
+font-weight: bold;
+direction: ltr;
+}
+h4 {
+font-weight: bold;
+direction: ltr;
+}
+h5 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+margin-top: 8.0PT;
+direction: ltr;
+}
+h6 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+font-style: italic;
+margin-top: 8.0PT;
+direction: ltr;
+}
+.title {
+font-size: 34.0PT;
+color: #283592;
+margin-top: 20.0PT;
+line-height: 1.0;
+direction: ltr;
+}
+.subtitle {
+color: #e01b84;
+direction: ltr;
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">gdocweb Blog</a></li>
+        <li><a href="introducing-gdocweb.html">Introducing gdocweb</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content"><div style="clear: both;">&nbsp;</div><br><p class="normal_text" style='direction: ltr; '><span style='font-size: 20.0PT; color: #6d64e8; '><strong>gdocweb Blog
+</strong></span></p><h1 style='direction: ltr; '><span style='font-size: 34.0PT; color: #283592; '>Introducing gdocweb
+</span></h1><p class="subtitle" style='direction: ltr; '><span style=''>December</span><span style=''> 28th, 2023
+</span></p><p class="normal_text" style='direction: ltr; '><span style='color: #283592; '>by </span><span style='color: #283592; '><strong>Shai Almog</strong></span><span style=''>
+</span></p><p class="normal_text" style='margin-top: 10.0PT; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/introducing-gdocweb_1.png" alt="Placeholder image" style="width: 623.8439999999999px; height: 317.5933090909091px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><h2 style='direction: ltr; '><span style='font-size: 20.0PT; color: #e01b84; '>This Post is a Google Docs Document…
+</span></h2><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><span style=''>Yes. This post started off as a </span><span style='color: #1155cc; '><a href="https://docs.google.com/document/d/1oF3FdtK1NoLPWO5aCfcsSct5xMK5mgSgEkDt6m_1pvo/edit?usp=sharing">Google Docs document</a></span><span style=''> that you can see by clicking that link. I’m assuming you’re seeing it on the web which is where it’s supposed to be. It was translated to a web page seamlessly using </span><span style='color: #1155cc; '><a href="https://gdocweb.com/">gdocweb</a></span><span style=''>. Gdocweb converts Google Docs to websites or more importantly to GitHub Pages. GitHub provides free website hosting, including custom domains. That means you end up with a no-strings-attached website.	
+</span></p><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><span style=''>This is pretty convenient as we don’t have to write HTML or maintain files on GitHub. We can collaborate using Google Docs and get a fully functional site. 
+</span></p><h2 style='direction: ltr; '><span style='font-size: 20.0PT; color: #e01b84; '>How does it Work?
+</span></h2><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><span style=''>In order to build this blog website we need to first create a few Google Docs documents. You can look for inspiration in the templates section on </span><span style='color: #1155cc; '><a href="https://gdocweb.com/">gdocweb.com</a></span><span style=''>. Since this is a blog site I will create two documents. The first is </span><span style='color: #1155cc; '><a href="https://docs.google.com/document/d/1oF3FdtK1NoLPWO5aCfcsSct5xMK5mgSgEkDt6m_1pvo/edit?usp=sharing">this document that you’re reading right now</a></span><span style=''>, it’s the content of the blog. The </span><span style='color: #1155cc; '><a href="https://docs.google.com/document/d/1jvsVDXt-D6My8YANh20KxiqG0dM2iYMynA6gwIGm1X0/edit?usp=sharing">second document is the homepage of the blog</a></span><span style=''> which will  include the latest entries and links to the full posts. To link I can create a link to a web page as usual, or to another Google Docs document. </span><span style=''><strong>Important:</strong></span><span style=''> link translation will only work for documents that are in the current set of exported documents. If you link to a document that isn’t a part of the site it would remain a link to a Google Docs document. Furthermore, there’s a special case of linking to the current page. Those links aren’t translated since it’s assumed that you might want to provide readers with the ability to edit/review the actual document.
+</span></p><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><span style=''>Once we create some documents we need to login on </span><span style='color: #1155cc; '><a href="https://gdocweb.com/">gdocweb.com</a></span><span style=''> and most crucially, approve the permissions to access both documents and drive. This is essential to scan the files and is 100% read-only. No data from your documents is retained or saved into disk. See the image below to understand the permission dialog from Google. Also notice that I just dragged this image into Google Docs and it’s now seamlessly a part of this website and blog post…
+</span></p><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><img src="img/introducing-gdocweb_2.jpg" style="width: 533.9320573770492px; height: 626.343375px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><span style=''>Once we go through that step we are faced with a list of our documents. You can use your browser's search function to find the relevant entry. Once there 
+</span></p><h2 style='direction: ltr; '><span style='font-size: 20.0PT; color: #e01b84; '>Future Improvements
+</span></h2><p class="normal_text" style='direction: ltr; '><span style=''>gdocweb was designed as a general purpose tool for generating websites. Not as a blogging platform. As such it is lacking in many regards:
+</span></p><ul><li><span style=''>No commenting system.
+</span></li><li><span style=''>We have to generate our own blog index.
+</span></li><li><span style=''>No search or elaborate functionality.
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style=''>I would like to improve the commenting and some interactive aspects when moving forward with this tool. If you feel strongly about any of these let us know on our social channels.</span><span style=''>
+</span></p><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/introducing-gdocweb_3.png" alt="horizontal line" style="width: 623.8439999999999px; height: 5.332px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='color: #283592; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='color: #6d64e8; '>
+</span></p><p class="normal_text" style='margin-top: 20.0PT; line-height: 1.0; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='margin-top: 20.0PT; line-height: 1.4; direction: ltr; '><span style=''>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>© Your Company
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>123 Your Street, </span><span style=''>Your City, ST 12345
+</span></p><img src="img/introducing-gdocweb_4.png" style="float: left; width: 1218.723742875px; height: 149.25867599999998px; " /><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>

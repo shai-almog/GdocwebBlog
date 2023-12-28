@@ -1,0 +1,172 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    color: #0067cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+header a {
+    text-decoration: none;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .content {
+        width: 95%;
+    }
+}
+
+
+footer {
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.hamburger-menu span {
+    background-color: #333;
+}
+header {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding: 1em 0;
+    display: flow-root list-item;
+    border-right: 1px solid #ddd;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+    text-align: left;
+    line-height: 2.6;
+    white-space: nowrap;
+}
+.content {
+    padding: 20px;
+    margin-left: 210px;
+    overflow: hidden;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li .submenu-toggle {
+    display: none;
+}
+.submenu {
+    padding-left: 20px;
+    font-size: 80%;
+}
+@media (max-width: 768px) {
+    header {
+        padding-left: 10px;
+        height: auto;
+        width: 100%;
+    }
+    .content {
+        padding: 40px 5px;
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+header .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    header .hamburger-menu {
+        padding: 0px;
+        display: flex;
+        margin-left: 0px;
+    }
+
+    header a {
+        display: none;
+    }
+
+    header.nav-active a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header.nav-active {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    header.nav-active nav ul {
+        display: flex;
+    }
+
+    header nav ul li .submenu-toggle {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    header nav ul li ul.submenu {
+        display: none;
+        position: static;
+        flex-direction: column;
+    }
+
+    header nav ul li.submenu-active ul.submenu {
+        display: block;
+    }
+
+    header nav ul li {
+        display: flex;
+        align-items: center;
+    }
+}
