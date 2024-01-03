@@ -5,6 +5,10 @@ body {
     line-height: 1.6;
 }
 
+.hamburger-menu span {
+    background-color: #333;
+}
+
 a {
     color: #0067cc;
     text-decoration: none;
@@ -47,8 +51,24 @@ footer {
     width: 100%;
 }
 
-.hamburger-menu span {
-    background-color: #333;
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #E0E0E0;
+        background-color: #212121;
+    }
+
+    header {
+        background-color: black;
+    }
+
+    a, a:visited {
+        color: #BBDEFB;
+    }
+
+    header, footer {
+        background: black;
+        color: white;
+    }
 }
 header {
     height: 100%;
