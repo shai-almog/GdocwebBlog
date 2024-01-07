@@ -201,7 +201,7 @@ header {
       background-color: #1976d2;
 }
 @media (prefers-color-scheme: dark) {
-  body {
+  body, .normal_text {
         color: #ffffff;
   }
   header {
