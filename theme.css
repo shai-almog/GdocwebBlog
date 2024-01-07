@@ -69,6 +69,9 @@ footer {
         background: black;
         color: white;
     }
+    .hamburger-menu span {
+        background-color: white;
+    }
 }
 header {
     height: 100%;
@@ -189,4 +192,25 @@ header .hamburger-menu {
         display: flex;
         align-items: center;
     }
+}
+
+header {
+      color: #ffffff;
+}
+header {
+      background-color: #1976d2;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+        color: #ffffff;
+  }
+  header {
+        color: #ffffff;
+  }
+  header {
+        background-color: #1565c0;
+  }
+  a {
+        color: #ffffff;
+  }
 }
