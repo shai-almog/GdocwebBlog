@@ -194,7 +194,7 @@ header .hamburger-menu {
     }
 }
 
-header {
+header, header a {
       color: #ffffff;
 }
 header {
@@ -204,7 +204,7 @@ header {
   body, .normal_text {
         color: #ffffff;
   }
-  header {
+  header, header a {
         color: #ffffff;
   }
   header {
