@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styling and Dark Mode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    
+@font-face {   font-family: 'Roboto';   font-style: normal;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype'); } 
+.normal_text {
+font-family: Roboto;
+font-size: 11.0PT;
+color: #666666;
+margin-top: 10.0PT;
+line-height: 1.4;
+direction: ltr;
+}
+h1 {
+font-size: 34.0PT;
+color: #283592;
+margin-top: 20.0PT;
+line-height: 1.0;
+direction: ltr;
+}
+h2 {
+font-size: 20.0PT;
+color: #e01b84;
+margin-top: 16.0PT;
+line-height: 1.0;
+direction: ltr;
+}
+h3 {
+font-size: 12.0PT;
+color: #283592;
+font-weight: bold;
+direction: ltr;
+}
+h4 {
+font-weight: bold;
+direction: ltr;
+}
+h5 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+margin-top: 8.0PT;
+direction: ltr;
+}
+h6 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+font-style: italic;
+margin-top: 8.0PT;
+direction: ltr;
+}
+.title {
+font-size: 34.0PT;
+color: #283592;
+margin-top: 20.0PT;
+line-height: 1.0;
+direction: ltr;
+}
+.subtitle {
+color: #e01b84;
+direction: ltr;
+}
+
+@media (prefers-color-scheme: dark) {
+  .title {
+        color: #ffffff;
+  }
+  h1 {
+        color: #ffffff;
+  }
+  h3 {
+        color: #bbc3ff;
+  }
+  .normal_text {
+        color: #ffffff;
+  }
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li class="menu-item"><a href="index.html">gdocweb Blog</a>
+            <div class="submenu-toggle" onclick="toggleSubmenu(event, 'submenu-1')">&#9662;</div>
+            <ul class="submenu" id="submenu-1">
+        <li><a href="styling-and-dark-mode.html">Styling and Dark Mode</a></li>
+        <li><a href="introducing-gdocweb.html">Introducing gdocweb</a></li>
+        <li><a href="blog-comments.html">Blog Comments</a></li>
+            </ul>
+            </li>
+    </ul>
+    </nav>
+</header>
+<div class="content"><div style="clear: both;">&nbsp;</div><br><p class="normal_text" style='direction: ltr; '><span style='font-size: 20.0PT; color: #6d64e8; '><strong>gdocweb Blog
+</strong></span></p><h1 style='direction: ltr; '><span style=''>Styling and Dark Mode</span><span style=''>
+</span></h1><p class="subtitle" style='direction: ltr; '><span style=''>January</span><span style=''> 8th, 2024
+</span></p><h3 style='direction: ltr; '><span style=''>by Shai Almog
+</span></h3><p class="normal_text" style='margin-top: 10.0PT; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/35cf4e90e1ecfe486fcde62918b3e0d828df70b8.jpg" alt="Placeholder image" style="width: 623.8439999999999px; height: 317.5933090909091px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><h2 style='direction: ltr; '><span style=''>Styling a Document isn’t as Trivial as you Might Assume</span><span style='font-size: 20.0PT; color: #e01b84; '>
+</span></h2><p class="normal_text" style='margin-bottom: 30.0PT; direction: ltr; '><span style=''>When using Google Docs it’s often tempting to reach out to the font or color toolbar to design your document as you see fit. This would work great for simple sites but as gdocweb evolves you might find it produces a result that isn’t as attractive as you might want. The reason for that is due to two important features we just added to gdocweb: custom colors and dark mode.
+</span></p><h2 style='direction: ltr; '><span style=''>Dark Mode Support</span><span style='font-size: 20.0PT; color: #e01b84; '>
+</span></h2><p class="normal_text" style='direction: ltr; '><span style=''>We recently updated gdocweb with a new theme: Adaptive. 
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>The Adaptive theme is identical to the default “Basic” theme but when it’s running on a device set to dark mode it will render the website with a dark version of the theme. As you can see below, this blog automatically adapts to light or dark mode. However, the transition wasn’t seamless.
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/c9ba8a38aaae8f1621f14c6edc5d41059426e3cb.png" style="width: 623.8439999999999px; height: 151.962px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><img src="img/f0c215de23bc6dd99f0d3cd29409daa06d603df7.png" style="width: 623.8439999999999px; height: 157.29399999999998px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><h2 style='direction: ltr; '><span style=''>Title Styling
+</span></h2><p class="normal_text" style='direction: ltr; '><span style=''>The initial design of the blog was based on a template from Google Docs. In this template “Introducing gdocweb” was defined as a “Heading 1” style, but it was later customized to appear a bit differently from the actual “Heading 1” definition.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Headings are an important part of the web, in general your page should have only one “Heading 1” and multiple “Heading 2” elements (and possibly 3, 4, 5 etc.). If you break these rules you might suffer a search engine penalty. But it goes deeper than that, once you customize the style of the heading we can’t override it. That results in dark blue text on black background. Not very readable for the most important line within a post...
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>The solution is simple and it includes two parts. The first is to use styles in the document by placing the cursor on the heading and invoking “Update ‘Heading 1’ to match (or the appropriate style you want to customize). We then need to select “Apply ‘Heading 1’” to re-apply it to the current line. Besides the obvious advantages with dark mode, this also helps keep the document consistent. E.g. if we want to change the font or color for all “Heading 2” entries we can do that in one place and they will all update. 
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/e9eb08e31bfb484a6b7cddc44f9ba661c7044298.png" style="width: 623.8439999999999px; height: 301.258px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>But the real advantage is in gdocweb. We can now customize specific colors within the theme. This is useful for dark mode but also useful for applying brand colors on top of the theme. We can pick replacement default colors for background and foreground of various elements and make the replacements apply only for light or dark mode. This is all a part of the themes section as seen in the image below.
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/b5525e50033ca8265e3d26745f97a6bb8f69733f.png" style="width: 338.771687283737px; height: 447.0548749999998px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><h2 style='direction: ltr; '><span style='font-size: 20.0PT; color: #e01b84; '>Future Improvements
+</span></h2><p class="normal_text" style='direction: ltr; '><span style=''>Ideally the themes should include the right colors out of the box but the ability to customize these colors is a crucial one. Let us know in the comments if you need deeper styling and what your technical level is. One of our planned features is a style override that will let you inject a custom style file to the page. However, this would require technical understanding and control of CSS, I’m not sure if this is something that would fit with our main demographic. 
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>You can see the document that generated this post </span><span style='color: #1155cc; '><a href="https://docs.google.com/document/d/1mZLhYedYKY3MOizIWPt_J4APlzOaNCbOoEiER0LxuyY/edit?usp=sharing">here</a></span><span style=''>.
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/8eda2593397020a32b77a12875055dd2b947ad1f.png" alt="horizontal line" style="width: 623.8439999999999px; height: 5.332px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><h2 style='direction: ltr; '><span style='font-size: 20.0PT; color: #e01b84; '>Comments</span><span style=''>
+</span></h2><p class="normal_text" style='direction: ltr; '><script src="https://utteranc.es/client.js"
+        repo="shai-almog/GdocwebBlog"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+</p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><img src="img/71cebaddf41808f0667ddebb9f69a3de6cc92b4f.png" style="float: left; width: 1218.723742875px; height: 149.25867599999998px; " /><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>
