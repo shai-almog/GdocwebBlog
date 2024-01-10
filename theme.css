@@ -5,6 +5,14 @@ body {
     line-height: 1.6;
 }
 
+p {
+    margin: 0px;
+}
+
+.normal_text {
+    color: #fff;
+}
+
 .hamburger-menu span {
     background-color: #333;
 }
