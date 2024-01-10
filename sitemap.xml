@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+    <loc>https://blog.gdocweb.com/</loc>
+    <lastmod>2024-01-10T14:29:02.786594+02:00</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>https://blog.gdocweb.com/styling-and-dark-mode.html</loc>
+    <lastmod>2024-01-10T14:29:16.016114+02:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://blog.gdocweb.com/blog-comments.html</loc>
+    <lastmod>2024-01-10T14:29:27.574175+02:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://blog.gdocweb.com/introducing-gdocweb.html</loc>
+    <lastmod>2024-01-10T14:29:43.296387+02:00</lastmod>
+    <priority>0.80</priority>
+</url>
+
+</urlset>
