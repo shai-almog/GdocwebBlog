@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://blog.gdocweb.com/sitemap.xml
