@@ -4,7 +4,12 @@
 <channel>
   <title>gdocweb Blog</title>
   <link>https://blog.gdocweb.com/</link>
-  <description>gdocweb Blog  January 8th, 2024   When using Google Docs it’s often tempting to reach out to the font or color toolbar to design your document as you see fit. This would work great for simple sites but as gdocweb evolves you might find it produces a result that isn’t as attractive as you might want. The reason</description>
+  <description>gdocweb Blog  January 14th, 2024   gdocweb has its first few users and one of the big complaints is about the tediousness of going through that wizard every time you just want to test a change to a document. I don’t want gdocweb working in the background reading my documents and publishing, that would be an invasion of</description>
+  <item>
+    <title>Regenerate Immediately and RSS</title>
+    <link>https://blog.gdocweb.com/regenerate-immediately-and-rss.html</link>
+     <description>gdocweb Blog January 14th, 2024   gdocweb has its first few users and one of the big complaints is about the tediousness of going through that wizard every time you just want to test a change to a document. I don’t want gdocweb working in the background reading my documents and publishing, that would be an invasion of privacy.</description>
+   </item>
   <item>
     <title>Styling and Dark Mode</title>
     <link>https://blog.gdocweb.com/styling-and-dark-mode.html</link>
