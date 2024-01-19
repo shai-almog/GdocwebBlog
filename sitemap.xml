@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>https://blog.gdocweb.com/</loc>
-    <lastmod>2024-01-14T13:28:33.871422+02:00</lastmod>
+    <lastmod>2024-01-19T14:47:07.752118078Z</lastmod>
     <priority>1.00</priority>
 </url>
 <url>
+    <loc>https://blog.gdocweb.com/single-page-from-multiple-documents.html</loc>
+    <lastmod>2024-01-19T14:47:13.066249396Z</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
     <loc>https://blog.gdocweb.com/regenerate-immediately-and-rss.html</loc>
-    <lastmod>2024-01-14T13:28:41.141766+02:00</lastmod>
+    <lastmod>2024-01-19T14:47:16.791234291Z</lastmod>
     <priority>0.80</priority>
 </url>
 <url>
     <loc>https://blog.gdocweb.com/styling-and-dark-mode.html</loc>
-    <lastmod>2024-01-14T13:28:46.15195+02:00</lastmod>
+    <lastmod>2024-01-19T14:47:21.013050456Z</lastmod>
     <priority>0.80</priority>
 </url>
 <url>
     <loc>https://blog.gdocweb.com/blog-comments.html</loc>
-    <lastmod>2024-01-14T13:28:53.252841+02:00</lastmod>
+    <lastmod>2024-01-19T14:47:26.203066194Z</lastmod>
     <priority>0.80</priority>
 </url>
 <url>
     <loc>https://blog.gdocweb.com/introducing-gdocweb.html</loc>
-    <lastmod>2024-01-14T13:29:02.586164+02:00</lastmod>
+    <lastmod>2024-01-19T14:47:33.550967446Z</lastmod>
     <priority>0.80</priority>
 </url>
 
