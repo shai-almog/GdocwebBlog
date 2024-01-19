@@ -4,7 +4,12 @@
 <channel>
   <title>gdocweb Blog</title>
   <link>https://blog.gdocweb.com/</link>
-  <description>gdocweb Blog  January 14th, 2024   gdocweb has its first few users and one of the big complaints is about the tediousness of going through that wizard every time you just want to test a change to a document. I don’t want gdocweb working in the background reading my documents and publishing, that would be an invasion of</description>
+  <description>gdocweb Blog  January 19th, 2024   A common type of website on the internet and in the startup world is the multi-section page. In such a page a single web page is divided into multiple distinct sections. Each section is colored differently and might even feature completely different stylings. This is possible to accomplish in Google Docs but</description>
+  <item>
+    <title>Single Page from Multiple Documents</title>
+    <link>https://blog.gdocweb.com/single-page-from-multiple-documents.html</link>
+     <description>gdocweb Blog January 19th, 2024   A common type of website on the internet and in the startup world is the multi-section page. In such a page a single web page is divided into multiple distinct sections. Each section is colored differently and might even feature completely different stylings. This is possible to accomplish in Google Docs but is</description>
+   </item>
   <item>
     <title>Regenerate Immediately and RSS</title>
     <link>https://blog.gdocweb.com/regenerate-immediately-and-rss.html</link>
