@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Embed and Advanced GitHub Usage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="theme.css">
+  <link rel="alternate" type="application/rss+xml" title="gdocweb Blog" href="https://blog.gdocweb.com/feed.xml" />
+  <link rel="canonical" href="https://blog.gdocweb.com/video-embed-and-advanced-github-usage.html">
+
+    <style>
+    
+@font-face {   font-family: 'Roboto';   font-style: normal;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype'); } 
+.normal_text {
+font-family: Roboto;
+font-size: 11.0PT;
+color: #666666;
+padding-top: 10.0PT;
+line-height: 1.4;
+direction: ltr;
+}
+h1 {
+font-size: 34.0PT;
+color: #283592;
+padding-top: 20.0PT;
+line-height: 1.0;
+direction: ltr;
+}
+h2 {
+font-size: 20.0PT;
+color: #e01b84;
+padding-top: 16.0PT;
+line-height: 1.0;
+direction: ltr;
+}
+h3 {
+font-size: 12.0PT;
+color: #283592;
+font-weight: bold;
+direction: ltr;
+}
+h4 {
+font-weight: bold;
+direction: ltr;
+}
+h5 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+padding-top: 8.0PT;
+direction: ltr;
+}
+h6 {
+font-family: Trebuchet MS;
+font-size: 11.0PT;
+color: #666666;
+font-style: italic;
+padding-top: 8.0PT;
+direction: ltr;
+}
+.title {
+font-size: 20.0PT;
+color: #6d64e8;
+font-weight: bold;
+direction: ltr;
+}
+.subtitle {
+color: #e01b84;
+direction: ltr;
+}
+
+@media (prefers-color-scheme: dark) {
+  .title {
+        color: #ffffff;
+  }
+  h1 {
+        color: #ffffff;
+  }
+  h3 {
+        color: #bbc3ff;
+  }
+  .normal_text {
+        color: #ffffff;
+  }
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li class="menu-item"><a href="index.html">gdocweb Blog</a>
+            <div class="submenu-toggle" onclick="toggleSubmenu(event, 'submenu-1')">&#9662;</div>
+            <ul class="submenu" id="submenu-1">
+        <li><a href="video-embed-and-advanced-github-usage.html">Video Embed and Advanced GitHub Usage</a></li>
+        <li><a href="single-page-from-multiple-documents.html">Single Page from Multiple Documents</a></li>
+        <li><a href="regenerate-immediately-and-rss.html">Regenerate Immediately and RSS</a></li>
+        <li><a href="styling-and-dark-mode.html">Styling and Dark Mode</a></li>
+        <li><a href="blog-comments.html">Blog Comments</a></li>
+        <li><a href="introducing-gdocweb.html">Introducing gdocweb</a></li>
+            </ul>
+            </li>
+    </ul>
+    </nav>
+</header>
+<div class="content"background-color: #ffffff; clear: both; overflow: auto; ">
+<div style="clear: both;">&nbsp;</div><br><div class="title" style='direction: ltr; '><span style=''>gdocweb Blog
+</span></div><h1 style='direction: ltr; '><span style=''>Video Embed and Advanced GitHub Usage
+</span></h1><p class="subtitle" style='direction: ltr; '><span style=''>January 27th, 2024
+</span></p><h3 style='direction: ltr; '><span style=''>by Shai Almog
+</span></h3><p class="normal_text" style='padding-top: 10.0PT; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/8df10604d0845198edb55893915809e3e76bef34.jpg" alt="Placeholder image" style="width: 623.8439999999999px; height: 317.5933090909091px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; "><span style=''>
+</span></p><p class="normal_text" style='padding-bottom: 30.0PT; direction: ltr; '><span style=''>This week I spent a lot of time working on </span><span style='color: #1155cc; '><a href="http://gdocweb.com" style="color: #1155cc; ">gdocweb</a></span><span style=''> bugs around padding for images and bullet positioning. But I did introduce one very important feature: the ability to embed a youtube video into the blog post as you can see below. You need to write it as </span><iframe width="560" height="315" src="https://www.youtube.com/embed/videoid?si=edx2j5ZEbaEF2dKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p><p class="normal_text" style='direction: ltr; '><iframe width="560" height="315" src="https://www.youtube.com/embed/UNjWg53q6J8?si=edx2j5ZEbaEF2dKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p><h2 style='padding-top: 14.0PT; padding-bottom: 4.0PT; direction: ltr; '><span style=''>Understanding gdocweb for Casual and Advanced Users
+</span></h2><p class="normal_text" style='padding-top: 12.0PT; padding-bottom: 12.0PT; direction: ltr; '><span style='color: #1155cc; '><a href="http://gdocweb.com" style="color: #1155cc; ">gdocweb</a></span><span style=''> is not just for casual users who prefer not to delve into the intricacies of HTML, markdown, or Git. It's a robust platform that offers immense benefits even for the tech-savvy crowd. In this post, we're diving deeper into the technical aspects and unique capabilities of </span><span style='color: #1155cc; '><a href="http://gdocweb.com" style="color: #1155cc; ">gdocweb</a></span><span style=''>, showcasing why it's a valuable asset even for experienced developers and content creators.
+</span></p><h2 style='direction: ltr; '><span style=''>gdocweb's Technical Brilliance
+</span></h2><p class="normal_text" style='padding-top: 12.0PT; padding-bottom: 12.0PT; direction: ltr; '><span style=''>Let's break down how gdocweb operates. Imagine a blog, like the gdocweb blog, created entirely through gdocweb. It's built from multiple Google Docs files — an index document and separate documents for each post. This structure not only simplifies blog management but also offers greater control over content.
+</span></p><h3 style='direction: ltr; '><span style=''>A Peek Under the Hood
+</span></h3><p class="normal_text" style='padding-top: 12.0PT; padding-bottom: 12.0PT; direction: ltr; '><span style=''>When you hit the 'finish' button on gdocweb, the magic begins. It automatically creates a new branch in your repository, adds changes, and initiates a pull request. The usual process is auto-merging this branch, but you have the option to manually control this by adjusting settings in the GitHub step of the wizard.
+</span></p><h3 style='padding-top: 12.0PT; padding-bottom: 2.0PT; direction: ltr; '><span style=''>Automatic Metadata Generation
+</span></h3><p class="normal_text" style='padding-top: 12.0PT; padding-bottom: 12.0PT; direction: ltr; '><span style=''>One of gdocweb's standout features is its ability to auto-generate critical metadata files. For instance, RSS feeds and sitemaps are created effortlessly, provided you set the Base URL of your website. This setting is crucial as it enables the construction of canonical links and the generation of these essential files.
+</span></p><h3 style='direction: ltr; '><span style=''>Additional Features for Enhanced Customization
+</span></h3><p class="normal_text" style='padding-top: 12.0PT; padding-bottom: 12.0PT; direction: ltr; '><span style=''>gdocweb doesn't just stop at content management. It offers additional functionalities that cater to more specific needs. For example, it supports a target directory on GitHub, allowing you to organize your docs efficiently, which is especially beneficial for project documentation.
+</span></p><p class="normal_text" style='padding-top: 12.0PT; padding-bottom: 12.0PT; direction: ltr; '><span style=''>Furthermore, gdocweb respects your existing GitHub workflow. It seamlessly integrates without deleting any files, though it may overwrite some. This approach is used to manage elements like favicons in the root directory. You can also add other files, such as manifests, and even incorporate GitHub Actions for further customization of your website.
+</span></p><h2 style='padding-top: 18.0PT; padding-bottom: 4.0PT; line-height: 1.4; direction: ltr; '><span style='font-size: 17.0PT; color: #666666; '><strong>Conclusion
+</strong></span></h2><p class="normal_text" style='padding-top: 12.0PT; padding-bottom: 12.0PT; direction: ltr; '><span style=''>In summary, gdocweb is a powerful tool that transcends basic content management. It's a boon for both newcomers and seasoned users, offering a range of features from simple blog creation to advanced website customization.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>You can see the document that generated this post </span><span style='color: #1155cc; '><a href="https://docs.google.com/document/d/1ZtllIsCpUxZdsjd6GmERdLkIm9LZQO46YpKOiILzeKQ/edit?usp=sharing" style="color: #1155cc; ">here</a></span><span style=''>.
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/8eda2593397020a32b77a12875055dd2b947ad1f.png" alt="horizontal line" style="width: 623.8439999999999px; height: 5.332px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; "><span style=''>
+</span></p><h2 style='direction: ltr; '><span style='font-size: 20.0PT; color: #e01b84; '>Comments</span><span style=''>
+</span></h2><p class="normal_text" style='direction: ltr; '><script src="https://utteranc.es/client.js"
+        repo="shai-almog/GdocwebBlog"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+</p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><img src="img/71cebaddf41808f0667ddebb9f69a3de6cc92b4f.png" alt="footer graphic" style="float: left; width: 1218.723742875px; height: 149.25867599999998px; margin: 0.0PT 0.0PT 0.0PT 0.0PT; "><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>
