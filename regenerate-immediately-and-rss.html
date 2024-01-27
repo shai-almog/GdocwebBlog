@@ -99,6 +99,7 @@ direction: ltr;
         <li class="menu-item"><a href="index.html">gdocweb Blog</a>
             <div class="submenu-toggle" onclick="toggleSubmenu(event, 'submenu-1')">&#9662;</div>
             <ul class="submenu" id="submenu-1">
+        <li><a href="video-embed-and-advanced-github-usage.html">Video Embed and Advanced GitHub Usage</a></li>
         <li><a href="single-page-from-multiple-documents.html">Single Page from Multiple Documents</a></li>
         <li><a href="regenerate-immediately-and-rss.html">Regenerate Immediately and RSS</a></li>
         <li><a href="styling-and-dark-mode.html">Styling and Dark Mode</a></li>
@@ -115,7 +116,7 @@ direction: ltr;
 </span></h1><p class="subtitle" style='direction: ltr; '><span style=''>January</span><span style=''> 14th, 2024
 </span></p><h3 style='direction: ltr; '><span style=''>by Shai Almog
 </span></h3><p class="normal_text" style='padding-top: 10.0PT; direction: ltr; '><span style=''>
-</span></p><p class="normal_text" style='direction: ltr; '><img src="img/6ff85af435844d51e3878027046d11d63b0b84e7.jpg" alt="Placeholder image" style="width: 623.8439999999999px; height: 317.5933090909091px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/6ff85af435844d51e3878027046d11d63b0b84e7.jpg" alt="Placeholder image" style="width: 623.8439999999999px; height: 317.5933090909091px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; "><span style=''>
 </span></p><p class="normal_text" style='padding-bottom: 30.0PT; direction: ltr; '><span style='color: #1155cc; '><a href="https://gdocweb.com/" style="color: #1155cc; ">gdocweb</a></span><span style=''> has its first few users and one of the big complaints is about the tediousness of going through that wizard every time you just want to test a change to a document. I don’t want gdocweb working in the background reading my documents and publishing, that would be an invasion of privacy. But I would like it to work instantly.
 </span></p><p class="normal_text" style='padding-bottom: 30.0PT; direction: ltr; '><span style=''>With that we now have a link to regenerate the site quickly. Not with a single click, you still need to go through a Google login for security. Once that’s done you will reach the final stage of the wizard directly and the website will be updated. You can do that by visiting </span><span style='color: #1155cc; '><a href="https://gdocweb.com/regenerateSite" style="color: #1155cc; ">https://gdocweb.com/regenerateSite</a></span><span style=''> </span><span style=''>
 </span></p><h2 style='direction: ltr; '><span style=''>RSS (Really Simple Syndication) and Sitemap</span><span style='font-size: 20.0PT; color: #e01b84; '>
@@ -124,13 +125,13 @@ direction: ltr;
 </span></p><p class="normal_text" style='direction: ltr; '><span style=''>Sitemaps are even more important. They let search engines know about the pages you have in the website and the dates in which they were last updated. This helps search engines keep track of everything and makes your site easier to find. The sitemap for this site can be found </span><span style='color: #1155cc; '><a href="https://blog.gdocweb.com/sitemap.xml" style="color: #1155cc; ">here</a></span><span style=''>. Normally you wouldn’t care about it, but search engines care about it...
 </span></p><p class="normal_text" style='direction: ltr; '><span style=''>Both files require a full URL to the generated pages in order to function. Unfortunately, this isn’t trivial. The gdocweb blog can be reached both on: </span><span style='color: #1155cc; '><a href="https://shai-almog.github.io/GdocwebBlog/" style="color: #1155cc; ">https://shai-almog.github.io/GdocwebBlog/</a></span><span style=''> and on </span><span style='color: #1155cc; '><a href="https://blog.gdocweb.com/" style="color: #1155cc; ">https://blog.gdocweb.com/</a></span><span style=''>. The latter is the correct link and the former correctly redirects to it, however if we have links to the former this will reduce the search engine ranking. We need to link to the correct blog URL but gdocweb can’t guess it from the project name.
 </span></p><p class="normal_text" style='direction: ltr; '><span style=''>That’s why all of this good stuff will only work if you set the value of the “Base URL” entry in the GitHub repository selection stage of the wizard. Once that is set as shown in the following image, this will all work as expected.
-</span></p><p class="normal_text" style='direction: ltr; '><img src="img/b3d6577f6c0de04d3d431ee705757c5e2fe04930.jpg" style="width: 623.8439999999999px; height: 355.911px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/b3d6577f6c0de04d3d431ee705757c5e2fe04930.jpg" style="width: 623.8439999999999px; height: 355.911px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; "><span style=''>
 </span></p><p class="normal_text" style='direction: ltr; '><span style=''>As a bonus, setting this value will also set the canonical URL for each page. This is an important attribute of an HTML file that helps search engines find your website. 
 </span></p><h2 style='direction: ltr; '><span style=''>Target Directory and Automatic Merge
 </span></h2><p class="normal_text" style='direction: ltr; '><span style=''>In the previous image we could see two additional features that are also quite important but mostly geared towards the technical crowd. The first is the target directory. By default, gdocweb generates everything into the GitHub Projects root directory. This is great for a site, however if you’re building documentation for a pre-existing project then generating the project to a docs directory might be a better approach. The “Target Directory” option is a great tool for developers building documentation and websites for their projects.
 </span></p><p class="normal_text" style='direction: ltr; '><span style=''>gdocweb generates a pull request for the project and merges that pull request for you automatically. This default behavior might not be right for all projects and also includes a risk. You might want an additional review for changes. In that case you can uncheck the “Merge Automatically” flag and disable the default behavior. This means a run of the gdocweb wizard will result with a new pull request for you to merge manually. For me that has been a valuable debugging tool as I could experiment with changes to the blog without merging them in.</span><span style=''> 
 </span></p><p class="normal_text" style='direction: ltr; '><span style=''>You can see the document that generated this post </span><span style='color: #1155cc; '><a href="https://docs.google.com/document/d/17ek6RcufHhNb9S8NMGMNPQQW0vMmDNPwtvJKDvHQoRE/edit?usp=sharing" style="color: #1155cc; ">here</a></span><span style=''>.
-</span></p><p class="normal_text" style='direction: ltr; '><img src="img/8eda2593397020a32b77a12875055dd2b947ad1f.png" alt="horizontal line" style="width: 623.8439999999999px; height: 5.332px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; " /><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><img src="img/8eda2593397020a32b77a12875055dd2b947ad1f.png" alt="horizontal line" style="width: 623.8439999999999px; height: 5.332px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; "><span style=''>
 </span></p><h2 style='direction: ltr; '><span style='font-size: 20.0PT; color: #e01b84; '>Comments</span><span style=''>
 </span></h2><p class="normal_text" style='direction: ltr; '><script src="https://utteranc.es/client.js"
         repo="shai-almog/GdocwebBlog"
@@ -140,7 +141,7 @@ direction: ltr;
         async>
 </script>
 </p><p class="normal_text" style='direction: ltr; '><span style=''>
-</span></p><img src="img/71cebaddf41808f0667ddebb9f69a3de6cc92b4f.png" style="float: left; width: 1218.723742875px; height: 149.25867599999998px; " /><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><img src="img/71cebaddf41808f0667ddebb9f69a3de6cc92b4f.png" alt="footer graphic" style="float: left; width: 1218.723742875px; height: 149.25867599999998px; margin: 0.0PT 0.0PT 0.0PT 0.0PT; "><p class="normal_text" style='direction: ltr; '><span style=''>
 </span></p>
 </div><footer>
     Created for free by
