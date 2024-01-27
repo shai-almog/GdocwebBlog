@@ -4,11 +4,11 @@
 <channel>
   <title>gdocweb Blog</title>
   <link>https://blog.gdocweb.com/</link>
-  <description>gdocweb Blog January 27th, 2024   This week I spent a lot of time working on gdocweb bugs around padding for images and bullet positioning. But I did introduce one very important feature: the ability to embed a youtube video into the blog post as you can see below. You need to write it as ::YOUTUBE::videoid:: as the first</description>
+  <description>gdocweb Blog January 27th, 2024   This week I spent a lot of time working on gdocweb bugs around padding for images and bullet positioning. But I did introduce one very important feature: the ability to embed a youtube video into the blog post as you can see below. You need to write it as you can see below</description>
   <item>
     <title>Video Embed and Advanced GitHub Usage</title>
     <link>https://blog.gdocweb.com/video-embed-and-advanced-github-usage.html</link>
-     <description>gdocweb Blog January 27th, 2024   This week I spent a lot of time working on gdocweb bugs around padding for images and bullet positioning. But I did introduce one very important feature: the ability to embed a youtube video into the blog post as you can see below. You need to write it as ::YOUTUBE::videoid:: as the first</description>
+     <description>gdocweb Blog January 27th, 2024   This week I spent a lot of time working on gdocweb bugs around padding for images and bullet positioning. But I did introduce one very important feature: the ability to embed a youtube video into the blog post as you can see below. You need to write it as you can see below</description>
    </item>
   <item>
     <title>Single Page from Multiple Documents</title>
